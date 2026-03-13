@@ -1,6 +1,6 @@
 # Assignment 1 - Image Warping
 
-### In this assignment, you will implement basic transformation and point-based deformation for images.
+### In this assignment, I will implement basic transformation and point-based deformation for images.
 
 
 ### 1. Basic Image Geometric Transformation (Scale/Rotation/Translation).
