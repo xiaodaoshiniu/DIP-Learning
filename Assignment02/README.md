@@ -1,6 +1,6 @@
 ﻿# 第二次作业提交说明
 
-本次作业包含两部分内容：Poisson Image Editing 与 Pix2Pix 图像到图像翻译。提交文件夹中仅保留了与作业要求直接相关的代码、结果图和本说明文档，其余中间文件、调试脚本和效果较差的结果图均未放入。
+本次作业包含两部分内容：Poisson Image Editing 与 Pix2Pix 图像到图像翻译。提交目录中仅保留了与作业要求直接相关的代码、结果图和本说明文档，其余中间文件、调试脚本和效果较差的结果图均未放入。
 
 ## 一、文件夹结构
 
@@ -41,10 +41,13 @@ Poisson 融合的核心思想不是直接复制像素值，而是尽量保持前
 
 ### 3. 提交结果
 
-提交中保留了 2 张 Poisson 结果图：
+最终融合图：
 
-- `Poisson/poisson_water_result.png`：最终融合结果图
-- `Poisson/poisson_water_comparison.png`：对比图，用于展示背景图、选区位置与最终融合效果
+<img src="./Poisson/poisson_water_result.png" alt="Poisson Final Result" width="800">
+
+对比图：
+
+<img src="./Poisson/poisson_water_comparison.png" alt="Poisson Comparison Result" width="800">
 
 从结果可以看出，目标区域中的主体已经被融合到新的背景场景中，边界过渡比直接粘贴更加自然，符合 Poisson Image Editing 的预期目标。
 
@@ -66,22 +69,31 @@ Pix2Pix 部分要求基于 facades 数据集完成图像到图像翻译任务。
 
 训练在服务器上完成，主要流程如下：
 
-1. 读取 facades 数据集训练集与验证集
-2. 使用 FCN 网络进行端到端训练
-3. 以 `L1 Loss` 作为重建损失
-4. 使用 `Adam` 优化器更新参数
-5. 定期保存训练过程中的可视化结果图
+1. 读取 facades 数据集训练集与验证集。
+2. 使用 FCN 网络进行端到端训练。
+3. 以 `L1 Loss` 作为重建损失。
+4. 使用 `Adam` 优化器更新参数。
+5. 定期保存训练过程中的可视化结果图。
 
 ### 4. 提交结果说明
 
-由于部分结果图生成效果较差，本次提交只保留了质量相对较好的样例，避免无关或低质量内容影响展示。保留的图片位于 `Pix2Pix/figures/` 文件夹中：
+由于部分结果图生成效果较差，本次提交只保留了质量相对较好的样例，避免无关或低质量内容影响展示。下列结果图均来自训练后期，能够较好地反映模型已经学习到建筑场景的主要结构与区域对应关系。图中一般按照“输入图像 / 目标语义图 / 模型输出”的顺序排列。
 
-- `pix2pix_result_1.png`
-- `pix2pix_result_2.png`
-- `pix2pix_result_4.png`
-- `pix2pix_result_5.png`
+结果 1：
 
-这些结果图均来自训练后期，能够较好地反映模型已经学习到建筑场景的主要结构与区域对应关系。
+<img src="./Pix2Pix/figures/pix2pix_result_1.png" alt="Pix2Pix Result 1" width="800">
+
+结果 2：
+
+<img src="./Pix2Pix/figures/pix2pix_result_2.png" alt="Pix2Pix Result 2" width="800">
+
+结果 4：
+
+<img src="./Pix2Pix/figures/pix2pix_result_4.png" alt="Pix2Pix Result 4" width="800">
+
+结果 5：
+
+<img src="./Pix2Pix/figures/pix2pix_result_5.png" alt="Pix2Pix Result 5" width="800">
 
 ### 5. 结果分析
 
