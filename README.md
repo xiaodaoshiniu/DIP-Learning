@@ -1,55 +1,30 @@
-# Assignment 1 - Image Warping
+﻿# DIP-Learning
 
-### In this assignment, I will implement basic transformation and point-based deformation for images.
+数字图像处理课程作业仓库，当前按作业编号进行整理，便于查看与提交。
 
+## 作业导航
 
-### 1. Basic Image Geometric Transformation (Scale/Rotation/Translation).
-Implemented in `run_global_transform.py`. The script provides an interactive Gradio interface to apply scale, rotation, translation, and horizontal flip transformations to an image.
+- [第一次作业：Image Warping](./Assignment01/README.md)
+- [第二次作业：Poisson Image Editing 与 Pix2Pix](./Assignment02/README.md)
 
-### 2. Point Based Image Deformation.
-Implemented RBF-based image warping in `run_point_transform.py`. The implementation uses radial basis functions (Gaussian kernel) to compute a smooth deformation field from source to target control points. The interface allows clicking source and target points on the image and runs the deformation.
+## 目录结构
 
-## Implementation of Image Geometric Transformation
-
-This repository contains the implementation of Assignment 01 of DIP (Digital Image Processing). The code has been completed with interactive Gradio interfaces for both global and point-based transformations.
-
-## Requirements
-
-To install requirements:
-
-```setup
-python -m pip install -r requirements.txt
+```text
+DIP-Learning/
+├─ Assignment01/
+│  ├─ README.md
+│  ├─ requirements.txt
+│  ├─ run_global_transform.py
+│  ├─ run_point_transform.py
+│  └─ test_pics/
+└─ Assignment02/
+   ├─ README.md
+   ├─ Poisson/
+   └─ Pix2Pix/
 ```
 
+## 说明
 
-## Running
-
-To run basic transformation, run:
-
-```basic
-python run_global_transform.py
-```
-
-To run point guided transformation, run:
-
-```point
-python run_point_transform.py
-```
-
-## Results
-
-### Basic Transformation
-The global transformation interface allows adjusting scale, rotation, translation, and flip. Below is an example result:
-
-<img src="test_pics/global_transform.png" alt="Global Transformation Example" width="800">
-
-
-### Point Guided Deformation:
-The point-based deformation uses RBF with Gaussian kernel. Users can click source (blue) and target (red) points, and the algorithm warps the image accordingly. Example:
-
-<img src="test_pics/point_transform.png" alt="Point Transformation Example" width="800">
-
-
-## Acknowledgement
-
->📋 Thanks for the algorithms proposed by [Image Deformation Using Moving Least Squares](https://people.engr.tamu.edu/schaefer/research/mls.pdf).
+- `Assignment01` 对应第一次作业，内容为图像几何变换与基于控制点的图像形变。
+- `Assignment02` 对应第二次作业，内容为 Poisson 图像融合与 Pix2Pix 图像到图像翻译。
+- 第二次作业中仅保留了与提交直接相关的代码、结果图和中文说明文档，效果较差的 Pix2Pix 结果图未放入提交目录。
