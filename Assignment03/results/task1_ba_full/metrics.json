@@ -1,0 +1,24 @@
+{
+  "num_views": 50,
+  "num_points": 20000,
+  "num_visible_observations": 805089,
+  "image_size": 1024,
+  "device": "cuda",
+  "iters": 3000,
+  "batch_size": 262144,
+  "final_focal": 3357.166748046875,
+  "final_metrics": {
+    "iter": 3000.0,
+    "train_loss_px": 8.918924331665039,
+    "rmse_px": 8.957429550089067,
+    "mean_l2_px": 8.784446191663282,
+    "focal": 3357.166748046875
+  },
+  "outputs": {
+    "obj": "reconstruction.obj",
+    "loss_curve": "loss_curve.png",
+    "preview": "point_cloud_preview.png",
+    "camera_params": "camera_params.npz",
+    "training_log": "training_log.csv"
+  }
+}

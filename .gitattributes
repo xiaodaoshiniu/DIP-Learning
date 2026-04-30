@@ -1,0 +1,16 @@
+*.sh text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.ini text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npz binary
+*.npy binary
+*.bin binary
+*.ply binary
+*.obj text eol=lf

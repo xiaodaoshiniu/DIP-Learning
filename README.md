@@ -6,6 +6,7 @@
 
 - [第一次作业：Image Warping](./Assignment01/README.md)
 - [第二次作业：Poisson Image Editing 与 Pix2Pix](./Assignment02/README.md)
+- [第三次作业：Bundle Adjustment 与 COLMAP 三维重建](./Assignment03/README.md)
 
 ## 目录结构
 
@@ -17,17 +18,24 @@ DIP-Learning/
 │  ├─ run_global_transform.py
 │  ├─ run_point_transform.py
 │  └─ test_pics/
-└─ Assignment02/
+├─ Assignment02/
+│  ├─ README.md
+│  ├─ Poisson/
+│  └─ Pix2Pix/
+└─ Assignment03/
    ├─ README.md
-   ├─ Poisson/
-   └─ Pix2Pix/
+   ├─ bundle_adjustment.py
+   ├─ data/
+   └─ results/
 ```
 
 ## 说明
 
 - `Assignment01` 对应第一次作业，内容为图像几何变换与基于控制点的图像形变。
 - `Assignment02` 对应第二次作业，内容为 Poisson 图像融合与 Pix2Pix 图像到图像翻译。
+- `Assignment03` 对应第三次作业，内容为 PyTorch Bundle Adjustment 与 COLMAP 稀疏/稠密三维重建。
 - 第二次作业中仅保留了与提交直接相关的代码、结果图和中文说明文档，效果较差的 Pix2Pix 结果图未放入提交目录。
+- 第三次作业中保留了 BA 代码、输入数据、关键结果文件和结果图；COLMAP 的大体积中间缓存未提交。
 
 ## 作业预览
 
@@ -50,3 +58,17 @@ Poisson 融合效果：
 Pix2Pix 结果示例：
 
 <img src="./Assignment02/Pix2Pix/figures/pix2pix_result_1.png" alt="Assignment 2 Pix2Pix Result 1" width="800">
+
+### 第三次作业：Bundle Adjustment 与 COLMAP 三维重建
+
+Bundle Adjustment 损失曲线：
+
+<img src="./Assignment03/results/task1_ba_full/loss_curve.png" alt="Assignment 3 BA Loss Curve" width="800">
+
+PyTorch BA 彩色点云预览：
+
+<img src="./Assignment03/results/task1_ba_full/point_cloud_preview.png" alt="Assignment 3 BA Point Cloud" width="800">
+
+COLMAP 稠密点云预览：
+
+<img src="./Assignment03/results/colmap/dense/colmap_dense_preview.png" alt="Assignment 3 COLMAP Dense Reconstruction" width="900">
