@@ -7,7 +7,7 @@
 - [第一次作业：Image Warping](./Assignment01/README.md)
 - [第二次作业：Poisson Image Editing 与 Pix2Pix](./Assignment02/README.md)
 - [第三次作业：Bundle Adjustment 与 COLMAP 三维重建](./Assignment03/README.md)
-- [第四次作业：3D Gaussian Splatting](./Assignment04/DIP_HW4_3DGS_submission/README.md)
+- [第四次作业：3D Gaussian Splatting](./Assignment04/README.md)
 
 ## 目录结构
 
@@ -29,11 +29,10 @@ DIP-Learning/
 │  ├─ data/
 │  └─ results/
 └─ Assignment04/
-   └─ DIP_HW4_3DGS_submission/
-      ├─ README.md
-      ├─ REPORT.md
-      ├─ data/
-      └─ results/
+   ├─ README.md
+   ├─ REPORT.md
+   ├─ data/
+   └─ results/
 ```
 
 ## 说明
@@ -86,4 +85,4 @@ COLMAP 稠密点云预览：
 
 官方管线渲染示例：
 
-<img src="./Assignment04/DIP_HW4_3DGS_submission/results/official/eval_rgb/examples/view_006.png" alt="Assignment 4 3DGS Render" width="800">
+<img src="./Assignment04/results/official/eval_foreground/examples/view_006.png" alt="Assignment 4 3DGS Render" width="800">
