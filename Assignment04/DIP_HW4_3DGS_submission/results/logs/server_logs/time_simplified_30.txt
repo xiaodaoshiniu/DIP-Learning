@@ -1,0 +1,23 @@
+	Command being timed: "python train.py --colmap_dir data/chair --checkpoint_dir outputs/chair_simplified_30 --num_epochs 30 --debug_every 5 --debug_samples 4 --device cuda"
+	User time (seconds): 1029.90
+	System time (seconds): 764.38
+	Percent of CPU this job got: 109%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 27:19.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1246536
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1537179
+	Voluntary context switches: 219605
+	Involuntary context switches: 10677
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 18336
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,23 @@
+	Command being timed: "python /home/czr/hw/gaussian-splatting/train.py -s /home/czr/dip_hw4_3dgs_project/data/chair -m /home/czr/dip_hw4_3dgs_project/outputs/official_chair_30000_noreset --iterations 30000 --save_iterations 30000 --test_iterations 30000 --disable_viewer --resolution 1 --opacity_reset_interval 1000000"
+	User time (seconds): 727.41
+	System time (seconds): 28.09
+	Percent of CPU this job got: 168%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:27.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4298456
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1191074
+	Voluntary context switches: 90732
+	Involuntary context switches: 2835
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 226712
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
