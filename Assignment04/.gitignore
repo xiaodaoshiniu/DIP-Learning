@@ -6,3 +6,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.tmp
+*.db
+*.pt
+point_cloud.ply
+database.db
